@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+body {
+  background: rgba(242, 242, 242, 1);
+  font-family: Montserrat, sans-serif;
+}
+
+body p {
+  font-size: 16px;
+  font-color: rgba(26, 26, 26, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Michroma, sans-serif;
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.nav-item:hover {
+  background: rgba(89, 25, 25, 1);
+}
+
+.noHover {
+  pointer-events: none;
+}
+
+.image {
+  margin: auto;
+}
+
+.carousel-inner img {
+  margin: auto;
+  padding-top: 65px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none;
+}
+
+.gradient {
+  padding-top: 40px;
+  background-image: linear-gradient(
+    rgba(89, 25, 25, 1),
+    rgba(242, 242, 242, 1)
+  );
+}
+
+.lines {
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+
+.lines::after,
+.lines::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 1px;
+  background: rgba(26, 26, 26, 1);
+  width: 10%;
+  top: 30%;
+}
+
+.lines::after {
+  left: 0;
+}
+
+.lines::before {
+  right: 0;
+}
+
+.elementlines {
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+
+.elementlines::after,
+.elementlines::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 1px;
+  background: rgba(26, 26, 26, 1);
+  width: 10%;
+  top: 30%;
+}
+
+.elementlines::after {
+  left: 0;
+}
+
+.elementlines::before {
+  right: 0;
+}
+
+.footer {
+  font-color: rgba(204, 204, 204, 1);
+}
+
+.fa {
+  color: rgba(204, 204, 204, 1);
+}
+
+@media (min-width: 320px) {
+  .lines {
+    height: 45px;
+  }
+  .lines::after,
+  .lines::before {
+    width: 15px;
+  }
+}
+
+@media (min-width: 375px) {
+  .lines {
+    height: 45px;
+  }
+  .lines::after,
+  .lines::before {
+    width: 35px;
+  }
+}
+
+@media (min-width: 576px) {
+  .lines {
+    height: 45px;
+  }
+  .lines::after,
+  .lines::before {
+    width: 75px;
+  }
+}
+
+@media (min-width: 768px) {
+  .lines {
+    height: 45px;
+  }
+  .lines::after,
+  .lines::before {
+    width: 125px;
+  }
+}
+
+@media (max-width: 991px) {
+  .linebreak {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .lines {
+    height: 45px;
+  }
+  .lines::after,
+  .lines::before {
+    width: 175px;
+  }
+  .elementlines::after {
+    display: none;
+  }
+  .elementlines::before {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lines {
+    height: 45px;
+  }
+  .lines::after,
+  .lines::before {
+    width: 250px;
+  }
+}
