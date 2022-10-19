@@ -115,6 +115,18 @@ ul {
   color: rgba(204, 204, 204, 1);
 }
 
+.link {
+	text-decoration: none;
+	color: rgba(26, 26, 26, 1);
+	margin-left: 10px;
+}
+
+.insomniac-logo, .blau-logo, .goldenvoice-logo, .ultra-worldwide-logo, .tomorrowland-logo {
+	justify-content: center;
+	text-decoration: none;
+	color: rgba(26, 26, 26, 1);
+}
+
 @media (min-width: 320px) {
   .lines {
     height: 45px;
@@ -185,4 +197,15 @@ ul {
   .lines::before {
     width: 250px;
   }
+}
+
+.hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transition: all 900ms;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
 }
